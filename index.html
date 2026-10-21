@@ -13,7 +13,7 @@
     </a>
     <nav>
         <ul>
-            <li><a href="Buscador.html">Buscador</a></li>
+            <li><a href="index.html">Inici</a></li>
             <li><a href="Contacte.html">Contacte</a></li>
         </ul>
     </nav>
@@ -22,10 +22,13 @@
         <section>
         <h1>BUSCAR una pel·lícula</h1>
         <p>Milions de títols, un sol cercador.</p>
-        <div>
-           <input input type="search" name="query" placeholder="Cerca una pel·lícula, per exemple Harry Potter">
-           <button>Cercar</button>
-        </div>
+         <form method="get" action="https://www.themoviedb.org/search">
+           <div>
+             <label for="cerca">Cerca una pel·lícula:</label>
+             <input type="search" id="cerca"name="query" placeholder="Cerca una pel·lícula, per exemple Harry Potter">
+             <button type="submit">Cercar</button>
+          </div>
+         </form>
         </section>
         <section>
             <h2>Resultats</h2>
