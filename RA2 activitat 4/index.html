@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMDB - El millor cercador de Pel·lícules</title>
+    <meta name="description" content="Pàgina web oficial que funciona com a cercador de pel·lícules amb milions de títols">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="stylesheet" href="css/estils.css">
+</head>
+<body>
+  <header> 
+    <a href="index.html">
+        <img src="imgHTML.svg" alt= "Logotip de The Movie Database">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Buscador</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+    </nav>
+  </header>
+    <main>
+        <section class="buscador">
+        <h1>BUSCAR una pel·lícula</h1>
+        <p>Milions de títols, un sol cercador.</p>
+         <form method="get" action="https://www.themoviedb.org/search">
+           <div>
+             <label for="cerca" class="sr-only">Cerca una pel·lícula:</label>
+             <input type="search" id="cerca" name="query" placeholder="Cerca una pel·lícula, per exemple <<Dune>>..." required>
+             <button type="submit">Cercar</button>
+          </div>
+         </form>
+        </section>
+        <section class="pelicules">
+            <h2>Resultats</h2>
+            <div class="resultats">
+            <article class="targeta">
+                <img src="https://image.tmdb.org/t/p/w500/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg" alt="Pòster Harry Potter i la pedra filosofal">
+                <h3>Harry Potter i la pedra filosofal</h3>
+                <p>2001</p>
+            </article>   
+            <article class="targeta">
+                <img src="https://image.tmdb.org/t/p/w500/sdEOIxX89WVDWTafppJS9nUrykN.jpg" alt="Pòster Harry Potter i la cambra secreta">
+                <h3>Harry Potter i la cambra secreta</h3>
+                <p>2002</p>
+            </article>
+            <article class="targeta">
+                <img src="https://image.tmdb.org/t/p/w500/5aCDCF50LnG0KBnWFodVKpiKghU.jpg" alt="Pòster Harry Potter i l'orde del fènix">
+                <h3>Harry Potter i l'orde del fènix</h3>
+                <p>2007</p>
+            </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 The Movie Database — Maqueta de disseny</p>
+    </footer>
+</body>
+</html>
