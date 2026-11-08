@@ -4,48 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacte - TMDB</title>
-    <meta name="description" content="Pàgina de contacte de TMDB">
+    <meta name="description" content="Pàgina de contacte de TMDB.">
+    <link rel="icon" type="image/x-icon" href="../Imatges/favicon.ico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="stylesheet" href="css/estils.css">
 </head>
 <body>
   <header> 
     <a href="index.html">
-        <img src="imgHTML.svg" alt= "Logotip de The Movie Database" style="height: 25px;">
+        <img src="../Imatges/imgHTML.svg" alt= "Logotip de The Movie Database">
     </a>
     <nav>
         <ul>
-            <li><a href="index.html">Buscador</a></li>
+            <li><a href="buscador.html">Buscador</a></li>
             <li><a href="contacte.html">Contacte</a></li>
         </ul>
     </nav>
   </header>
   <main>
-    <section>
-      <h2>CONTACTA AMB NOSALTRES</h2>
+    <section class="buscador">
+      <h1>CONTACTA AMB NOSALTRES</h1>
       <p>Tens algun dubte o suggeriment? Escriu-nos. </p>
-      <form>
-        <div>
-            <label for="nom">Nom i cognoms:</label>
-            <input type="text" id="nom" name="nom" required>
-        </div>
-        <div>
-            <label for="email">Correu electrònic:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-            <label for="assumpte">Assumpte:</label>
-            <input type="text" id="assumpte" name="assumpte" required>
-        </div>
-        <div>
-            <label for="missatge">Missatge:</label>
-            <textarea id="missatge" name="missatge" required></textarea>
-        </div>
-        <button type="submit">Enviar</button>
-      </form>
+    </section>
+
+    <section class="seccio-contacte">
+      <div class="contenerdor-contacte">
+         <div class="targeta-perfil">
+          <div class="perfil-header">
+            <div class="avatar-circle">NC</div>
+          </div>
+          <div class="perfil-body">
+            <h3>Nom Cognom1 Cognom2</h3>
+            <p class="rol">Alumne/a · Desenvolupament web</p>
+            <p class="bio">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+            </p>
+            </div>
+          </div>
+
+          <div class="formulari-container">
+            <h2>Envian'ns un missatge</h2>
+
+            <form method="post" action="#">
+                <div class="form-group">
+                    <label for="nom">Nom i cognoms:</label>
+                    <input type="text" id="nom" placeholder="El teu nom complet" required>
+                </div>
+                <div class="form-group"> 
+                    <label for="email">Correu electrònic:</label>
+                    <input type="email" id="email" name="email" placeholder="nom@exemple.com" required>
+                </div>
+                <div class="form-group"> 
+                    <label for="assumpte">Assumpte:</label>
+                    <input type="text" id="assumpte" name="assumpte" placeholder="Sobre què ens vols escriure?" required>
+                </div>
+                <div class="form-group">
+                    <label for="missatge">Missatge:</label>
+                    <textarea id="missatge" name="missatge" rows="4" placeholder="Escriu el teu missatge..." required></textarea>
+                </div>
+              <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+            </div>
+
+      </div>
     </section>
   </main>
 
   <footer>
-     <p>Aquesta pagina conte drets d'autor</p>
+    <p>&copy; 2026 The Movie Database — Maqueta de disseny</p>
   </footer>
-  </body>
-  </html>
+</body>
+</html>
