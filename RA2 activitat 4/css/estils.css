@@ -51,9 +51,9 @@ nav a:hover {
 }
 .buscador form {
     max-width: 800px;
-    magin: 0 auto;
+    margin: 0 auto;
 }
-.buscador input[type="text"] {
+.buscador input[type="search"] {
     width: 70%;
     color: #ffffff;
     background-color: #0b3a5e;
@@ -107,7 +107,7 @@ nav a:hover {
 }
 /* 1.6 Peu de pàgina */
 footer {
-    back-ground-color: #032541;
+    background-color: #032541;
     color: #d0dbe5;
     font-size: 0.8rem;
     padding: 20px 40px;
