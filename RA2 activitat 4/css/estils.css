@@ -112,3 +112,7 @@ footer {
     font-size: 0.8rem;
     padding: 20px 40px;
 }
+.buscador form {
+    max-width: 800px;
+    margin: 0 auto;
+}
